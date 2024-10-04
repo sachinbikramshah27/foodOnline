@@ -1,0 +1,31 @@
+<!-- <style>
+
+/* Alert Styling */
+.alert {
+    background-color: #f4f4f9;
+    color: #333;
+    border-left: 4px solid #6c63ff;
+    padding: 10px 15px;
+    margin-top: 20px;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+
+  .alert-success {
+    border-left-color: #28a745; /* Green border for success */
+    color: #155724;
+    background-color: #d4edda;
+  }
+
+  .alert-error {
+    border-left-color: #dc3545; /* Red border for error */
+    color: #721c24;
+    background-color: #f8d7da;
+  }
+</style> -->
+
+{% if messages %} {% for message in messages %}
+<div class="alert alert-{{message.tags}} show-notification" role="alert">
+  <strong>{{ message }}</strong>
+</div>
+{% endfor %} {% endif %}
