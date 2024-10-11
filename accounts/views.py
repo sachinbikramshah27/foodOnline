@@ -150,3 +150,7 @@ def custDashboard(request):
 def vendorDashboard(request):
     return render(request,'accounts/vendorDashboard.html')
 
+
+
+    
+
